@@ -1,0 +1,837 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Rubik:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 699px) {
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        outline: none;
+    }
+    p{
+        color: black;
+        text-align: center;
+    }
+    .container{
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 0 0%;
+        align-items: center;
+    }
+    .botao{
+        margin-top: 20px;
+        background-color: #a08050;
+        color: white;
+        font-size: 19px;
+        padding: 10px 120px;
+        cursor: pointer;
+        display: inline-block;
+        transition: 0.1;
+    }
+    
+    .botao:hover{
+        animation: pulse 2s infinite;
+        background-color: rgb(151, 121, 82); 
+    }
+    @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    header{
+        background-position: center;
+        background-size: cover;
+    }
+    .banner{
+        display: flex;
+        justify-content: center;
+        padding: 9.5%;
+    }
+    .banner .banner-text{
+        margin: 120px;
+        text-align: center;
+        padding: 0 0;
+    }
+    .banner .banner-text h1{
+        font-family: 'Arimo', sans-serif;
+        font-size: 45px;
+        text-shadow: 2px 2px 0 #153050, -2px -2px 0 #153050, 2px -2px 0 #153050, -2px 2px 0 #153050;
+        color: white; 
+    }
+    .banner .banner-text p{
+        font-family: 'Arimo', sans-serif;
+        font-size: 16px;
+        color: #ffffff;
+        font-weight: lighter;
+        margin: 18px 0;
+    }
+    .oferece{
+        padding-top: 55px;
+        font-family: 'Arimo', sans-serif;
+        font-size: 20px;
+        color: white;
+        line-height: 1.5;
+    }   
+    .texto-1{
+        text-align: center;
+        padding: 30px;
+        font-family: 'Arimo', sans-serif;
+        font-size: 20px;
+        max-width: 500px;
+    }
+    .texto-2{
+        padding-top: 20px;
+        margin-bottom: 32px;
+        font-family: 'Arimo', sans-serif;
+        font-size: 20px;
+        max-width: 500px;
+        font-weight: bold;
+    }
+    .blocos p{
+        text-align: center;
+    }
+    .cards{
+        padding-top: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .blocos .cards-item{
+        background-color: #a08050;
+        margin: 10px;
+        border-radius: 14 px;
+        text-align: center;
+        width: 320px;
+    }
+    .texto-3{
+        font-family: 'Arimo', sans-serif;
+        font-size: 20px;
+        padding: 10%;
+        color: white;
+    }
+    .img-1{
+        max-width: 320px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 10px;
+    }
+    .texto-4{
+        margin-top: 10px;
+        padding: 25px;
+        color: black;
+        font-family: 'Arimo', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .logo{
+        max-width: 180px;
+        display: block;
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .blocos h1{
+        font-family: 'Arimo', sans-serif;
+        text-align: center;
+    }    
+    .blocos-perguntas h1{
+        text-align: center;
+        padding: 30px;
+        font-family: 'Arimo', sans-serif;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .texto-5{
+        font-family: 'Arimo', sans-serif;
+        font-size: 20px;
+        color: black;
+        padding-top: 30px;
+        margin-bottom: 20px;
+    }
+    .blocos-feedback p{
+        text-align: center
+    }
+    .cards-feedback{
+        padding-top: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .blocos-feedback .cards-item-feedback{
+        background-color: #ffffff;
+        margin: 15px;
+        border-radius: 14px;
+        text-align: center;
+        width: 300px;
+        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4);
+        padding: 20px;
+    }
+    .cards-item-feedback h3{
+        font-family: 'Arimo', sans-serif;
+        font-size: 22px;
+        padding: 10px;
+    }
+    .cards-item-feedback p{
+        font-family: 'Arimo', sans-serif;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .blocos-perguntas h1{
+        text-align: center;
+    }
+    .blocos-perguntas p{
+        text-align: center
+    }
+    .cards-perguntas{
+        padding-top: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;  
+    }
+    .blocos-perguntas .cards-item-perguntas{
+        background-color: #ffffff;
+        margin: 15px;
+        border-radius: 14px;
+        text-align: center;
+        width: 300px;
+        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4);
+        padding: 20px;
+    }
+    .cards-item-perguntas h3{
+        font-family: 'Arimo', sans-serif;
+        font-size: 22px;
+        padding: 10px;
+    }
+    .cards-item-perguntas p{
+        font-family: 'Arimo', sans-serif;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .botao-2{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: #a08050;
+        color: white;
+        font-size: 19px;
+        padding: 10px 50px;
+        cursor: pointer;
+        display: inline-block;
+        transition: 0.1; 
+    }
+    .botao-2:hover{
+        animation: pulse 2s infinite;
+        background-color: rgb(151, 121, 82); 
+    }
+    .footer{
+        padding: 0px;
+    }
+    .container-footer{
+        justify-content: center;
+    }
+    .logo-footer{ 
+        padding-top: 20px;
+        max-width: 100px;
+        display: block; 
+        margin-left: auto;
+        margin-right: auto
+    }
+    .direitos{
+        display: flex;
+        justify-content: center;
+        color: #ffffff;
+        font-size: 8px;
+        font-weight: bold;
+        font-family: 'Arimo', sans-serif;
+        padding-bottom: 10px;
+    }
+    .whatsapp-icon{
+        max-width: 75px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;;
+    }   
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1200px) {
+
+    section{
+        padding: 54px 0; 
+    }
+    p{
+        color: black;
+        text-align: center;
+    }
+    .container{
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 0 0%;
+    }
+    .botao{
+        margin-top: 40px;
+        background-color: #a08050;
+        color: white;
+        font-size: 19px;
+        padding: 15px 150px;
+        cursor: pointer;
+        display: inline-block;
+        transition: 0.1;
+    }
+    
+    .botao:hover{
+        animation: pulse 2s infinite;
+        background-color: rgb(151, 121, 82); 
+    }
+    @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    header{
+        background-position: center;
+        background-size: cover;
+    }
+    .banner{
+        display: flex;
+        justify-content: center;
+        padding: 9.5%;
+    }
+    .banner .banner-text{
+        margin: 150px;
+        text-align: center;
+        padding: 0 0;
+    }
+    .banner .banner-text h1{
+        font-family: 'Arimo', sans-serif;
+        font-size: 65px;
+        text-shadow: 2px 2px 0 #153050, -2px -2px 0 #153050, 2px -2px 0 #153050, -2px 2px 0 #153050;
+        color: white; 
+    }
+    .banner .banner-text p{
+        font-family: 'Arimo', sans-serif;
+        font-size: 22px;
+        color: #ffffff;
+        font-weight: lighter;
+        margin: 18px 0;
+    }
+    .oferece{
+        font-family: 'Arimo', sans-serif;
+        font-size: 30px;
+        color: white;
+        text-shadow: 1px 1px 0 white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white;
+        line-height: 1.5;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    .oferece:hover{
+        animation-name: rolagem;
+    
+    }
+    @keyframes rolagem {
+        0% {
+          transform: translateY(0);
+        }
+        100% {
+          transform: translateY(-50%);
+        } }
+    
+    .texto-1{
+        font-family: 'Arimo', sans-serif;
+        font-size: 23px;
+        max-width: 400x;
+    }
+    .texto-2{
+        padding-top: 40px;
+        margin-bottom: 32px;
+        font-family: 'Arimo', sans-serif;
+        font-size: 25px;
+        max-width: 700px;
+        font-weight: bold;
+    }
+    .blocos p{
+        text-align: center;
+    }
+    .cards{
+        padding-top: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .blocos .cards-item{
+        background-color: #a08050;
+        margin: 15px;
+        border-radius: 14 px;
+        text-align: center;
+        width: 700px;
+    }
+    .texto-3{
+        font-family: 'Arimo', sans-serif;
+        font-size: 20px;
+        padding: 20%;
+        color: white;
+    }
+    .img-1{
+        max-width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .texto-4{
+        margin-top: 30px;
+        padding: 25px;
+        color: black;
+        font-family: 'Arimo', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .logo{
+        max-width: 30%;
+        display: block;
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .blocos h1{
+        text-align: center;
+    }
+    h1{
+        font-family: 'Arimo', sans-serif;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .texto-5{
+        font-family: 'Arimo', sans-serif;
+        font-size: 24px;
+        color: black;
+        padding-top: 30px;
+    }
+    .blocos-feedback p{
+        text-align: center
+    }
+    .cards-feedback{
+        padding-top: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .blocos-feedback .cards-item-feedback{
+        background-color: #ffffff;
+        margin: 15px;
+        border-radius: 14px;
+        text-align: center;
+        width: 700px;
+        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4);
+        padding: 20px;
+    }
+    .cards-item-feedback h3{
+        font-family: 'Arimo', sans-serif;
+        font-size: 22px;
+        padding: 10px;
+    }
+    .cards-item-feedback p{
+        font-family: 'Arimo', sans-serif;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .blocos-perguntas h1{
+        text-align: center;
+    }
+    .blocos-perguntas p{
+        text-align: center
+    }
+    .cards-perguntas{
+        padding-top: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;  
+    }
+    .blocos-perguntas .cards-item-perguntas{
+        background-color: #ffffff;
+        margin: 15px;
+        border-radius: 14px;
+        text-align: center;
+        width: 700px;
+        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4);
+        padding: 20px;
+    }
+    .cards-item-perguntas h3{
+        font-family: 'Arimo', sans-serif;
+        font-size: 22px;
+        padding: 10px;
+    }
+    .cards-item-perguntas p{
+        font-family: 'Arimo', sans-serif;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .botao-2{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: #a08050;
+        color: white;
+        font-size: 19px;
+        padding: 10px 50px;
+        cursor: pointer;
+        display: inline-block;
+        transition: 0.1; 
+    }
+    .botao-2 :hover{
+        animation: pulse 2s infinite;
+        background-color: rgb(151, 121, 82); 
+    }
+    .footer{
+        padding: 150px;
+    }
+    .container-footer{
+        justify-content: center;
+    }
+    .logo-footer{ 
+        padding-top: 20px;
+        max-width: 200px;
+        display: block; 
+        margin-left: auto;
+        margin-right: auto
+    }
+    .direitos{
+        display: flex;
+        justify-content: center;
+        color: #ffffff;
+        font-family: 'Arimo', sans-serif;
+        text-align: center;
+    }
+    .whatsapp-icon{
+        max-width: 70px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;;
+    }
+    .whatsapp-icon:hover{
+        animation-name: bounce;
+    }
+    @keyframes bounce {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        25% {
+            transform: translateY(-20px) rotate(10deg);
+        }
+        50% {   
+            transform: translateY(0) rotate(-10deg);
+        }
+        75% {
+            transform: translateY(-10px) rotate(5deg);
+        }
+    }
+    
+}
+@media only screen and (min-width: 1201px) and (max-width: 4000px){
+
+    body{
+        background-color:white;
+    }
+    section{
+        padding: 54px 0; 
+    }
+    p{
+        color: black;
+        text-align: center;
+    }
+    .container{
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 2.2%;
+    }
+    .botao{
+        margin-top: 40px;
+        background-color: #a08050;
+        color: white;
+        font-size: 19px;
+        padding: 15px 150px;
+        cursor: pointer;
+        display: inline-block;
+        transition: 0.1;
+        
+    }
+    
+    .botao:hover{
+        animation: pulse 2s infinite;
+        background-color: rgb(151, 121, 82); 
+    }
+    @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    header{
+        background-position: center;
+        background-size: cover;
+    }
+    .banner{
+        display: flex;
+        justify-content: center;
+        padding: 9.5%;
+    }
+    .banner .banner-text{
+        margin: 150px;
+        text-align: center;
+        padding: 0 90px;
+    }
+    .banner .banner-text h1{
+        font-family: 'Arimo', sans-serif;
+        font-size: 65px;
+        text-shadow: 2px 2px 0 #153050, -2px -2px 0 #153050, 2px -2px 0 #153050, -2px 2px 0 #153050;
+        color: white; 
+    }
+    .banner .banner-text p{
+        font-family: 'Arimo', sans-serif;
+        font-size: 22px;
+        color: #ffffff;
+        font-weight: lighter;
+        margin: 18px 0;
+    }
+    .oferece{
+        font-family: 'Arimo', sans-serif;
+        font-size: 30px;
+        color: white;
+        line-height: 1.5;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    .oferece:hover{
+        animation-name: rolagem;
+    
+    }
+    @keyframes rolagem {
+        0% {
+          transform: translateY(0);
+        }
+        100% {
+          transform: translateY(-50%);
+        }
+    }
+    
+    .texto-1{
+        font-family: 'Arimo', sans-serif;
+        font-size: 23px;
+        max-width: 1300px;
+    }
+    .texto-2{
+        padding-top: 32px;
+        margin-bottom: 32px;
+        font-family: 'Arimo', sans-serif;
+        font-size: 25px;
+        max-width: 1300px;
+        font-weight: bold;
+    }
+    .blocos p{
+        text-align: center;
+    }
+    .cards{
+        display: flex;
+        justify-content: center;
+    }
+    .blocos .cards-item{
+        background-color: #a08050;
+        margin: 15px;
+        border-radius: 14 px;
+        text-align: center;
+        width: 410px;
+    }
+    .texto-3{
+        font-family: 'Arimo', sans-serif;
+        font-size: 20px;
+        padding: 20%;
+        color: white;
+    }
+    .img-1{
+        max-width: 97.5%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .texto-4{
+        margin-top: 30px;
+        padding: 15px;
+        color: black;
+        font-family: 'Arimo', sans-serif;
+        font-size: 27px;
+        font-weight: bold;
+    }
+    .logo{
+        max-width: 30%;
+        display: block;
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .blocos h1{
+        text-align: center;
+    }
+    h1{
+        font-family: 'Arimo', sans-serif;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .texto-5{
+        font-family: 'Arimo', sans-serif;
+        font-size: 24px;
+        color: black;
+        padding-top: 30px;
+    }
+    .blocos-feedback p{
+        text-align: center
+    }
+    .cards-feedback{
+        display: flex;
+        justify-content: center;
+    }
+    .blocos-feedback .cards-item-feedback{
+        background-color: #ffffff;
+        margin: 15px;
+        border-radius: 14px;
+        text-align: center;
+        width: 280px;
+        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4);
+        padding: 20px;
+    }
+    .cards-item-feedback h3{
+        font-family: 'Arimo', sans-serif;
+        font-size: 22px;
+        padding: 10px;
+    }
+    .cards-item-feedback p{
+        font-family: 'Arimo', sans-serif;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .blocos-perguntas h1{
+        text-align: center;
+    }
+    .blocos-perguntas p{
+        text-align: center
+    }
+    .cards-perguntas{
+        padding-top: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;  
+    }
+    .blocos-perguntas .cards-item-perguntas{
+        background-color: #ffffff;
+        margin: 15px;
+        border-radius: 14px;
+        text-align: center;
+        width: 1200px;
+        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4);
+        padding: 20px;
+    }
+    .cards-item-perguntas h3{
+        font-family: 'Arimo', sans-serif;
+        font-size: 22px;
+        padding: 10px;
+    }
+    .cards-item-perguntas p{
+        font-family: 'Arimo', sans-serif;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .botao-2{
+        margin-top: 40px;
+        background-color: #a08050;
+        color: white;
+        font-size: 19px;
+        padding: 15px 150px;
+        cursor: pointer;
+        display: inline-block;
+        transition: 0.1;
+        
+    }
+    .botao-2:hover{
+        animation: pulse 2s infinite;
+        background-color: rgb(151, 121, 82); 
+    }
+    .footer{
+        padding: 150px;
+    }
+    .logo-footer{
+        margin-top: 400px;
+        max-width: 20%;
+        display: block;
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto
+    }
+    .direitos{
+        display: flex;
+        justify-content: center;
+        color: #ffffff;
+        font-family: 'Arimo', sans-serif;
+    }
+    .whatsapp-icon{
+        max-width: 6%;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999;
+        animation: bounce 3s infinite;
+        animation-iteration-count: infinite;;
+    }
+    @keyframes bounce {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        25% {
+            transform: translateY(-20px) rotate(10deg);
+        }
+        50% {   
+            transform: translateY(0) rotate(-10deg);
+        }
+        75% {
+            transform: translateY(-10px) rotate(5deg);
+        }
+    }   
+    
+}
+
+
+  
